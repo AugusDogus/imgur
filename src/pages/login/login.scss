@@ -10,4 +10,14 @@ page-login {
       display: inline-block;
     }
   }
+  .google{
+    width: 191px;
+    height: 46px;
+    background: color($colors, primary) url("../assets/imgs/google.svg") no-repeat;
+    span{
+      margin-left: 14px;
+      font-size: 12px;
+    }
+  }
+
 }
