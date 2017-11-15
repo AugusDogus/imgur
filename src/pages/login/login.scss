@@ -1,6 +1,6 @@
 page-login {
   .container {
-    margin-top: 50%;
+    z-index: 1;
   }
   .item {
     ion-card-header{
@@ -19,5 +19,10 @@ page-login {
       font-size: 12px;
     }
   }
-
+  .logo-header{
+    margin-top: 25%;
+    display: inline-block;
+    z-index: -1;
+    height: 30px;
+  }
 }
