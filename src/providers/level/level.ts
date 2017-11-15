@@ -1,19 +1,9 @@
 import { Injectable } from '@angular/core';
 
-/*
-  Generated class for the LevelProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class LevelProvider {
 
-  constructor() {
-    console.log('Hello LevelProvider Provider');
-  }
-
-  get(xp: Number){
+  static get(xp: Number){
     if (xp < 83 && xp >= 0) {
       return 1;
     } else if (xp < 174) {

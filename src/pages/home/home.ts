@@ -13,11 +13,11 @@ export class HomePage {
   public level;
   public xp;
 
-  constructor(public navCtrl: NavController, public levelProvider: LevelProvider) {}
+  constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
     this.xp = this.generateXP(0, 37224);
-    this.level = this.levelProvider.get(this.xp);
+    this.level = LevelProvider.get(this.xp);
   }
 
   generateXP(min,max)
