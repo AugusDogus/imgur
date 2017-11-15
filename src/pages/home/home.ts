@@ -17,7 +17,7 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.xp = this.generateXP(0, 37224);
-    this.level = this.levelProvider.getLevel(this.xp);
+    this.level = this.levelProvider.get(this.xp);
   }
 
   generateXP(min,max)
