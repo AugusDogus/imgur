@@ -15,11 +15,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
+  private username;
+  private password;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+  Login(){
+    //Attempt to login.
+    //If login was successful, go to Home Page.
+    //Otherwise, clear username and password fields and display a message that it failed.
+    alert("Logged in! " + this.username + ' ' + this.password);
+  }
+
+  static GoogleLogin(){
+    //Attempt to login.
+    alert("Logged in with Google!");
   }
 
 }

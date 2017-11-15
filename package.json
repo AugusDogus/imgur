@@ -1,15 +1,16 @@
 {
-  "name": "rpg",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "irlrpg",
+  "version": "1.0.0",
+  "author": "Augie Luebbers",
+  "homepage": "http://aug.dog/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "ionic:run:android": "ionic cordova run android"
   },
   "dependencies": {
     "@angular/common": "5.0.1",
