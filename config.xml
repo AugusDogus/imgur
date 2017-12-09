@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="dog.aug.irlrpg" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>IRL RPG</name>
-    <description>An awesome IRL RPG.</description>
+<widget id="dog.aug.imgur" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Imgur</name>
+    <description>An awesome alternative Imgur app.</description>
     <author email="the@aug.dog" href="http://aug.dog/">Augie Luebbers</author>
     <content src="index.html" />
     <access origin="*" />
