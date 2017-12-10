@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {TabsPage} from "../tabs/tabs";
+import { TabsPage } from "../tabs/tabs";
+import { ENV } from '@app/env';
 
 /**
  * Generated class for the LoginPage page.
@@ -23,10 +24,16 @@ export class LoginPage {
   }
 
   Login(){
-    //Attempt to login.
-    //If login was successful, go to Home Page.
-    //Otherwise, clear username and password fields and display a message that it failed.
-    this.navCtrl.setRoot(TabsPage).catch(error => console.error(error));
+
+    if (ENV.mode != 'testing') {
+      //Attempt to login.
+      //If login was successful, go to Home Page.
+      //Otherwise, clear username and password fields and display a message that it failed.
+      this.navCtrl.setRoot(TabsPage).catch(error => console.error(error));
+    } else {
+      this.navCtrl.setRoot(TabsPage).catch(error => console.error(error));
+    }
+
   }
 
   static GoogleLogin(){
