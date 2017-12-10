@@ -10,7 +10,8 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "ionic:run:android": "ionic cordova run android"
+    "ionic:run:android": "ionic cordova run android",
+    "serve:test": "IMGUR=testing ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/common": "5.0.1",
@@ -53,5 +54,8 @@
     "platforms": [
       "android"
     ]
+  },
+  "config": {
+    "ionic_webpack": "./config/webpack.config.js"
   }
 }
