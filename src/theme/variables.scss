@@ -11,7 +11,7 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
+//noinspection CssUnknownTarget
 @import "ionic.globals";
 
 
@@ -70,6 +70,7 @@ $colors: (
 // so that the above variables are used and Ionic's
 // default are overridden.
 
+//noinspection CssUnknownTarget
 @import "ionic.theme.default";
 
 
@@ -78,11 +79,14 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
+//noinspection CssUnknownTarget
 @import "ionic.ionicons";
 
 
 // Fonts
 // --------------------------------------------------
 
+//noinspection CssUnknownTarget
 @import "roboto";
+//noinspection CssUnknownTarget
 @import "noto-sans";
